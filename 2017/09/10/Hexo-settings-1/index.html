@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>設定 Settings（一） | Duke&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Introduction已經能產生基本的部落格架構了，接下來當然是不要在本機上自爽了，利用Gitgub.io的靜態網頁，把Hexo編譯後的html，部署上去。   main_config這是指專案下的設定檔可以設定作者、語系、部署位置等相關設定講解幾個比較重要的 Url這是顯示Hexo的路徑，如果你的專案名稱是用xxx.github.io，可以忽略不修改。但如果是跟我一樣是用專案的方式去產生，那麼">
+<meta name="keywords" content="Hexo,Github">
+<meta property="og:type" content="article">
+<meta property="og:title" content="設定 Settings（一）">
+<meta property="og:url" content="https://github.com/NoviceDuke/hexo/2017/09/10/Hexo-settings-1/index.html">
+<meta property="og:site_name" content="Duke&#39;s Blog">
+<meta property="og:description" content="Introduction已經能產生基本的部落格架構了，接下來當然是不要在本機上自爽了，利用Gitgub.io的靜態網頁，把Hexo編譯後的html，部署上去。   main_config這是指專案下的設定檔可以設定作者、語系、部署位置等相關設定講解幾個比較重要的 Url這是顯示Hexo的路徑，如果你的專案名稱是用xxx.github.io，可以忽略不修改。但如果是跟我一樣是用專案的方式去產生，那麼">
+<meta property="og:locale" content="zh-TW">
+<meta property="og:image" content="https://i.imgur.com/TiPy6IR.png">
+<meta property="og:updated_time" content="2017-09-10T08:21:23.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="設定 Settings（一）">
+<meta name="twitter:description" content="Introduction已經能產生基本的部落格架構了，接下來當然是不要在本機上自爽了，利用Gitgub.io的靜態網頁，把Hexo編譯後的html，部署上去。   main_config這是指專案下的設定檔可以設定作者、語系、部署位置等相關設定講解幾個比較重要的 Url這是顯示Hexo的路徑，如果你的專案名稱是用xxx.github.io，可以忽略不修改。但如果是跟我一樣是用專案的方式去產生，那麼">
+<meta name="twitter:image" content="https://i.imgur.com/TiPy6IR.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Duke&#39;s Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/hexo/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/hexo/" id="logo">Duke&#39;s Blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/hexo/">Home</a>
+        
+          <a class="main-nav-link" href="/hexo/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜尋"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://github.com/NoviceDuke/hexo"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-Hexo-settings-1" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/hexo/2017/09/10/Hexo-settings-1/" class="article-date">
+  <time datetime="2017-09-10T08:21:23.000Z" itemprop="datePublished">2017-09-10</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/hexo/categories/Hexo/">Hexo</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      設定 Settings（一）
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>已經能產生基本的部落格架構了，接下來當然是不要在本機上自爽了，利用<code>Gitgub.io</code>的靜態網頁，把<code>Hexo</code>編譯後的html，部署上去。</p>
+<hr>
+<p><img src="https://i.imgur.com/TiPy6IR.png" alt="Imgur"></p>
+<h2 id="main-config"><a href="#main-config" class="headerlink" title="main_config"></a>main_config</h2><p>這是指專案下的設定檔<br>可以設定作者、語系、部署位置等相關設定<br>講解幾個比較重要的</p>
+<h3 id="Url"><a href="#Url" class="headerlink" title="Url"></a>Url</h3><p>這是顯示<code>Hexo</code>的路徑，如果你的專案名稱是用<code>xxx.github.io</code>，可以忽略不修改。但如果是跟我一樣是用專案的方式去產生，那麼就要在<code>_config.yml</code>設定子名稱<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">url: https://github.com/作者/專案名稱</div><div class="line">root:/專案名稱/</div></pre></td></tr></table></figure></p>
+<blockquote>
+<ul>
+<li>修改<code>URL</code>的時候，也可以利用本地執行<code>hexo server</code>來觀察設定是否成功，<code>terminal</code>的提示會更改成我們的設置子路徑</li>
+<li>而<code>xxx.github.io</code>  是 <code>Github</code>官方幫各帳號預設的靜態網頁</li>
+</ul>
+</blockquote>
+<h3 id="Deploy"><a href="#Deploy" class="headerlink" title="Deploy"></a>Deploy</h3><p>這是指定你的要部署的<code>Github repository</code>及部署的分支，並在terminal下<code>Hexo</code>指令部署 <code>hexo deploy</code></p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  <span class="built_in">type</span>: git</div><div class="line">  repo: https://github.com/NoviceDuke/blog.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure>
+<blockquote>
+<ul>
+<li>如果在config 裡面沒有看到此設定，就自行加入即可</li>
+<li><code>hexo deploy</code> 執行時 可能會詢問git 帳號 直接輸入即可  </li>
+</ul>
+</blockquote>
+<h3 id="Theme"><a href="#Theme" class="headerlink" title="Theme"></a>Theme</h3><p>這是主題的部分，網路上有許多版本可以<code>clone</code>到你的專案下的themes裡面，接下來只要替換成你所<code>clone</code>時所指定的名稱即可</p>
+<blockquote>
+<ul>
+<li>許多人推薦Ｎext，支援也滿多的</li>
+<li>當然也可以稍微研究，並自行更改</li>
+</ul>
+</blockquote>
+<hr>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://github.com/NoviceDuke/hexo/2017/09/10/Hexo-settings-1/" data-id="cj7ehhum10001uh5tyipr4kya" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/hexo/tags/Github/">Github</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/hexo/tags/Hexo/">Hexo</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/hexo/2017/09/10/Hexo-1/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          初探Hexo
+        
+      </div>
+    </a>
+  
+  
+    <a href="/hexo/2017/09/10/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">分類</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/hexo/categories/Hexo/">Hexo</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">標籤</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/hexo/tags/Github/">Github</a></li><li class="tag-list-item"><a class="tag-list-link" href="/hexo/tags/Hexo/">Hexo</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">標籤雲</h3>
+    <div class="widget tagcloud">
+      <a href="/hexo/tags/Github/" style="font-size: 10px;">Github</a> <a href="/hexo/tags/Hexo/" style="font-size: 20px;">Hexo</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">彙整</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/hexo/archives/2017/09/">九月 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/hexo/2017/09/10/Hexo-1/">初探Hexo</a>
+          </li>
+        
+          <li>
+            <a href="/hexo/2017/09/10/Hexo-settings-1/">設定 Settings（一）</a>
+          </li>
+        
+          <li>
+            <a href="/hexo/2017/09/10/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 Duke Chiu<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/hexo/" class="mobile-nav-link">Home</a>
+  
+    <a href="/hexo/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/hexo/fancybox/jquery.fancybox.css">
+  <script src="/hexo/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/hexo/js/script.js"></script>
+
+  </div>
+</body>
+</html>
