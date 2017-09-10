@@ -12,8 +12,8 @@ timezone: GMT
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://github.com/NoviceDuke/hexotest
-root: /hexotest/
+url: https://github.com/NoviceDuke/hexo
+root: /hexo/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
