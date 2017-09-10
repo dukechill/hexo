@@ -79,7 +79,7 @@ theme: landscape
 deploy:
   type: git
   repo: https://github.com/NoviceDuke/hexo.git
-  branch: develop
+  branch: hexo-develop
 # Sitemap
 sitemap:
   path: sitemap.xml
